@@ -1,0 +1,39 @@
+
+#
+#  dictionary.radwin
+#
+#vendor id
+VENDOR		Radwin				4458
+
+BEGIN-VENDOR	Radwin
+#Service category for translate between the number and its name
+ATTRIBUTE	RADWIN_ServiceCategory			1		integer
+VALUE		RADWIN_ServiceCategory			Residential1 		1
+VALUE		RADWIN_ServiceCategory			Residential2		2
+VALUE		RADWIN_ServiceCategory			Residential3		3
+VALUE		RADWIN_ServiceCategory			Residential4		4
+VALUE		RADWIN_ServiceCategory			Business1			5
+VALUE		RADWIN_ServiceCategory			Business2			6
+VALUE		RADWIN_ServiceCategory			Business3			7
+VALUE		RADWIN_ServiceCategory			Business4			8
+
+#for cpe's serial number to check
+ATTRIBUTE	RADWIN_SerialNumber		2	string
+
+#cpe name return from Radius server
+ATTRIBUTE	RADWIN_Name				3	string
+
+#cpe location return from Radius server
+ATTRIBUTE	RADWIN_Location			4	string
+
+#cpe vlan id return from Radius server
+ATTRIBUTE	RADWIN_Vlan				5	integer
+
+#is the cpe enable or disabled , if enable register or update id necessary otherwise deregister if necessary
+ATTRIBUTE	RADWIN_RegisterAvailability			6	integer
+
+VALUE	RADWIN_RegisterAvailability		Disable		0
+VALUE	RADWIN_RegisterAvailability		Enable		1
+
+
+END-VENDOR	Radwin
