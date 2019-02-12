@@ -43,7 +43,7 @@ cd /var/www/radius
 composer update
 ```
 Setup Enviroment
-- Set variable values according to your Setup
+- Set variable values according to your Setup, Once that is done, rest of the steps are just copy/paste.
 ```
 ### Set hostname and database credentials
 
